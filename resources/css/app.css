@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default light mode styles */
+body {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+/* Default light mode styles */
+.footer {
+    color: black; /* Dark text for light mode */
+}
+
+/* Dark mode styles */
+body.dark-mode .footer {
+    background-color: #615e5e; /* Dark background for dark mode */
+    color: white; /* Light text for dark mode */
+}
+
+.dark-mode .img {
+    filter: invert(1) brightness(100%) sepia(0) saturate(10000%) hue-rotate(0deg);
+}
+
+/* Light mode */
+.light-mode img {
+    /* filter: invert(0) brightness(100%) sepia(0) saturate(10000%) hue-rotate(0deg); */
+}
+
+.dark-mode .background {
+    background-color: #ffffff; /* White background for dark mode */
+}
+
+.light-mode .background {
+    background-color: #000000; /* Black background for light mode */
+}
+
+.dark-mode .lightbg {
+    background-color: #fffdfd;
+    /* big box shadow white */
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+}
+.light-mode .lightbg {
+    background-color: #fffdfd;
+    /* big box shadow white */
+    box-shadow: 5px -5px 20px 2px rgba(0,0,0,0.25);
+}
+

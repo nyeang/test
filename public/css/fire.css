@@ -1,0 +1,50 @@
+
+    /* Light mode styles */
+    :root {
+        --text-color: #000;
+        --background-color: #fff;
+        --border-color: #ccc;
+        --hover-background-color: #eee;
+        --secondary-text-color: #555;
+        --link-color: #007bff;
+        --hover-link-color: #0056b3;
+    }
+
+    /* Dark mode styles */
+    [data-theme="dark"] {
+        --text-color: #d1d5db;
+        --background-color: #1f2937;
+        --border-color: #374151;
+        --hover-background-color: #4b5563;
+        --secondary-text-color: #9ca3af;
+        --link-color: #bfdbfe;
+        --hover-link-color: #93c5fd;
+    }
+
+    /* Applying the CSS variables */
+    .accordion-button {
+        color: var(--text-color);
+        background-color: var(--background-color);
+        border-color: var(--border-color);
+    }
+
+    .accordion-button:hover {
+        background-color: var(--hover-background-color);
+        color: var(--text-color);
+    }
+
+    .accordion-content {
+        color: var(--secondary-text-color);
+        background-color: var(--background-color);
+        border-color: var(--border-color);
+    }
+
+    .link-button {
+        color: var(--link-color);
+    }
+
+    .link-button:hover {
+        color: var(--hover-link-color);
+    }
+
+ 
